@@ -15,6 +15,7 @@ header {
   padding: 20px 40px;
   background-color: #ffffff;
   color: #000;
+  margin: 0 auto;
 }
 
 #principal, #second, #contato, #stream {
@@ -26,9 +27,7 @@ header {
 }
 
 #logo img {
-  margin-left: 300px;
-  width: 250px;
-  height: 95px;
+  width: 100px;
 }
 
 nav ul#menu {
@@ -86,6 +85,7 @@ main {
   max-width: 900px;
   width: 100%;
   align-items: flex-start;
+  margin: 0 auto;
 }
 
 #principal figure {
@@ -124,6 +124,14 @@ main {
   width: 425px;
 }
 
+#sec_ctd p#sinopse {
+  margin: 0;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 450px;
+}
+
 h1, h2 {
   font-family: 'Amatic SC', cursive;
   text-align: right;
@@ -138,7 +146,7 @@ p#sinopse {
 section#second {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 100px;
   padding: 40px 20px;
   max-width: 900px;
   margin: 0 auto 60px auto;
@@ -157,28 +165,43 @@ section#second img.capa {
 }
 
 #descricao iframe {
-  border-radius: 8px;
+  border-radius: 0;
   width: 480px;
   height: 270px;
   max-width: 100%;
 }
 
 #acesso {
-  display: flex;
+  background-color: #5b305a;
+  color: #fff;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  gap: 0;
   font-family: 'Amatic SC', cursive;
-  font-size: 22px;
+  padding: 27px 15px;
+  border-radius: 8px;
+  align-items: center;
+  width: 230px;
+  text-align: center;
+  box-shadow: 2px -1px 10px 3px rgba(0, 0, 0, 0.3)
 }
 
 #acesso a {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 #acesso a:hover {
   opacity: 0.8;
+}
+
+#acesso a:not(:last-child){
+  margin-bottom: 0;
 }
 
 #second a{
@@ -246,3 +269,12 @@ footer {
   }
 }
 
+iframe {
+  border: solid black 2px;
+}
+
+section #descricao {
+  padding: 20px;
+  border: solid #999999 1px;
+  border-radius: 0;
+}
