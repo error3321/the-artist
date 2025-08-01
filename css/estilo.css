@@ -84,7 +84,7 @@ main {
   gap: 60px;
   max-width: 900px;
   width: 100%;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -104,6 +104,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #sec_ctd h1 {
@@ -121,7 +122,7 @@ main {
   text-align: justify;
   font-size: 16px;
   line-height: 1.5;
-  width: 446px;
+  width: 425px;
 }
 
 #sec_ctd p#sinopse {
@@ -277,8 +278,8 @@ section #descricao {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   padding: 20px;
-  border: 1px solid #ccc;
   background-color: #fff;
+  width: 600px;
 }
 
 section #descricao h3 {
@@ -338,7 +339,6 @@ section #descricao li {
 }
 
 #descricao {
-  width: 700px;
   border: 1px solid black;
   height: auto;
 }
@@ -351,9 +351,7 @@ main.m + section #acesso.m {
   align-items: center;
   flex-direction: row;
   gap: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  width: fit-content;
-  height: fit-content;
+  box-shadow: 2px -1px 10px 3px rgba(0, 0, 0, 0.3)
 }
 
 main.m + section #acesso.m img {
@@ -362,3 +360,6 @@ main.m + section #acesso.m img {
   object-fit: contain;
 }
 
+#sec_ctd #resumo {
+  width: 407px;
+}
